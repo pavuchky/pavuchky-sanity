@@ -6,17 +6,54 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'streetList',
+      title: 'Street list',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'streetItem',
+          title: 'Street',
+          fields: [
+            {
+              name: 'street',
+              type: 'array',
+              title: 'Street',
+              of: [
+                {
+                  type: 'block',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    }),
+    defineField({
       name: 'socialMediaList',
-      title: 'Social Media List',
+      title: 'Social media list',
       type: 'array',
       of: [
         {
           type: 'object',
           name: 'socialMediaItem',
-          title: 'Social Media Item',
+          title: 'Social media item',
           fields: [
-            {type: 'string', name: 'name', title: 'Social Media Name'},
-            {type: 'string', name: 'link', title: 'Social Media Link'},
+            {
+              name: 'socialMediaName',
+              title: 'Social media name',
+              type: 'string',
+              initialValue: 'Instagram',
+              options: {
+                list: [
+                  {title: 'Instagram', value: 'Instagram'},
+                  {title: 'Telegram', value: 'Telegram'},
+                  {title: 'YouTube', value: 'YouTube'},
+                  {title: 'Facebook', value: 'Facebook'},
+                ],
+              },
+            },
+            {type: 'string', name: 'socialMediaLink', title: 'Social media link'},
           ],
         },
       ],
@@ -28,3 +65,14 @@ export default defineType({
     }),
   ],
 })
+
+// {
+//   name: 'lyrics',
+//   type: 'array',
+//   title: 'Lyrics',
+//   of: [
+//     {
+//       type: 'block',
+//     },
+//   ],
+// },
