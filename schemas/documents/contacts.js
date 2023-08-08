@@ -65,14 +65,3 @@ export default defineType({
     }),
   ],
 })
-
-// {
-//   name: 'lyrics',
-//   type: 'array',
-//   title: 'Lyrics',
-//   of: [
-//     {
-//       type: 'block',
-//     },
-//   ],
-// },
