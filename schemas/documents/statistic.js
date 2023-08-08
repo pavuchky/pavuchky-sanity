@@ -16,8 +16,8 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'days',
-      title: 'Days',
+      name: 'members',
+      title: 'Members',
       type: 'string',
     }),
   ],
