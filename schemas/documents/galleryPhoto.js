@@ -14,7 +14,7 @@ export default defineType({
           type: 'object',
           name: 'galleryPhotoItem',
           title: 'Gallery photo',
-          fields: [{type: 'link', name: 'photoLink', title: 'Gallery photo'}],
+          fields: [{type: 'string', name: 'photoLink', title: 'Gallery photo'}],
         },
       ],
     }),
