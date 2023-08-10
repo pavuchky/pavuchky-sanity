@@ -21,7 +21,7 @@ export default defineType({
           title: 'Post',
           fields: [
             {type: 'image', name: 'postImage', title: 'Post photo'},
-            {type: 'string', name: 'postDesc', title: 'Post description'},
+            {type: 'localizedString', name: 'postDesc', title: 'Post description'},
             {type: 'string', name: 'postLink', title: 'Post link'},
           ],
         },
