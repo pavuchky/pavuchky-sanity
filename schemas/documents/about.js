@@ -6,19 +6,24 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'days',
-      title: 'Days',
-      type: 'string',
+      name: 'aboutShort',
+      type: 'array',
+      title: 'About short',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
     }),
     defineField({
-      name: 'gridFootage',
-      title: 'Grid footage',
-      type: 'string',
-    }),
-    defineField({
-      name: 'members',
-      title: 'Members',
-      type: 'string',
+      name: 'aboutFull',
+      type: 'array',
+      title: 'About full',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
     }),
   ],
 })

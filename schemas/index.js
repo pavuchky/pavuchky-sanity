@@ -3,6 +3,7 @@ import partnersSchema from './documents/partners'
 import postsSchema from './documents/posts'
 import reviewsSchema from './documents/reviews'
 import statisticSchema from './documents/statistic'
+import aboutSchema from './documents/about'
 import localizedString from './objects/localizedString'
 
 export const schemaTypes = [
@@ -11,5 +12,6 @@ export const schemaTypes = [
   postsSchema,
   reviewsSchema,
   statisticSchema,
+  aboutSchema,
   localizedString,
 ]
