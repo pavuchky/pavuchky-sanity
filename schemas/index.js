@@ -3,7 +3,7 @@ import partnersSchema from './documents/partners'
 import postsSchema from './documents/posts'
 import reviewsSchema from './documents/reviews'
 import statisticSchema from './documents/statistic'
-// import localizedString from './objects/localizedString'
+import localizedString from './objects/localizedString'
 
 export const schemaTypes = [
   contactsSchema,
@@ -11,5 +11,5 @@ export const schemaTypes = [
   postsSchema,
   reviewsSchema,
   statisticSchema,
-  //   localizedString
+  localizedString,
 ]
