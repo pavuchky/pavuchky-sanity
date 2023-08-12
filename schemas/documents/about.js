@@ -6,9 +6,9 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'aboutShort',
+      name: 'aboutShortUa',
       type: 'array',
-      title: 'About short',
+      title: 'About short UA',
       of: [
         {
           type: 'block',
@@ -16,9 +16,29 @@ export default defineType({
       ],
     }),
     defineField({
-      name: 'aboutFull',
+      name: 'aboutShortEn',
       type: 'array',
-      title: 'About full',
+      title: 'About short EN',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
+    }),
+    defineField({
+      name: 'aboutFullUa',
+      type: 'array',
+      title: 'About full UA',
+      of: [
+        {
+          type: 'block',
+        },
+      ],
+    }),
+    defineField({
+      name: 'aboutFullEn',
+      type: 'array',
+      title: 'About full EN',
       of: [
         {
           type: 'block',
