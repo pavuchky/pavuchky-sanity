@@ -16,8 +16,6 @@ export default defineType({
           title: 'Reporting item',
           fields: [
             {type: 'localizedString', name: 'reportingMonth', title: 'Reporting month'},
-            // {type: 'string', name: 'financialReport', title: 'Financial report'},
-            // {type: 'string', name: 'resultsReport', title: 'Results report'},
             {
               title: 'Financial report',
               name: 'financialReport',
