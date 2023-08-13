@@ -16,9 +16,20 @@ export default defineType({
           title: 'Street',
           fields: [
             {
-              name: 'street',
+              name: 'streetUa',
               type: 'array',
-              title: 'Street',
+              title: 'Street UA',
+              of: [
+                {
+                  type: 'block',
+                },
+              ],
+            },
+
+            {
+              name: 'streetEn',
+              type: 'array',
+              title: 'Street EN',
               of: [
                 {
                   type: 'block',
