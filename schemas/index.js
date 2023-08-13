@@ -6,6 +6,7 @@ import statisticSchema from './documents/statistic'
 import aboutSchema from './documents/about'
 import galleryPhotoSchema from './documents/galleryPhoto'
 import galleryVideoSchema from './documents/galleryVideo'
+import reportingSchema from './documents/reporting'
 import localizedString from './objects/localizedString'
 
 export const schemaTypes = [
@@ -17,5 +18,6 @@ export const schemaTypes = [
   aboutSchema,
   galleryPhotoSchema,
   galleryVideoSchema,
+  reportingSchema,
   localizedString,
 ]
