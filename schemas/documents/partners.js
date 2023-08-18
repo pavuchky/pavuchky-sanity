@@ -15,7 +15,9 @@ export default defineType({
           name: 'partnerItem',
           title: 'Partner',
           fields: [
-            {type: 'image', name: 'partnerImage', title: 'Partner Photo'},
+            {type: 'image', name: 'partnerImageMobile', title: 'Partner Photo Mobile'},
+            {type: 'image', name: 'partnerImageTablet', title: 'Partner Photo Tablet'},
+            {type: 'image', name: 'partnerImageDesktop', title: 'Partner Photo Desktop'},
             {type: 'string', name: 'partnerLink', title: 'Partner Link'},
           ],
         },
