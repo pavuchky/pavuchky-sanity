@@ -16,7 +16,7 @@ export default defineType({
           title: 'Review',
           fields: [
             {type: 'string', name: 'reviewDesc', title: 'Review description'},
-            {type: 'image', name: 'reviewImage', title: 'Review photo'},
+            {type: 'string', name: 'reviewImage', title: 'Review photo'},
           ],
         },
       ],
