@@ -14,7 +14,10 @@ export default defineType({
           type: 'object',
           name: 'galleryVideoItem',
           title: 'Gallery video',
-          fields: [{type: 'string', name: 'videoLink', title: 'Gallery video link'}],
+          fields: [
+            {type: 'string', name: 'videoLink', title: 'Gallery video link'},
+            {type: 'string', name: 'videoDescription', title: 'Gallery video description'},
+          ],
         },
       ],
     }),
